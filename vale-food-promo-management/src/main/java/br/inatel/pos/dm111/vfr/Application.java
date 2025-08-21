@@ -1,0 +1,15 @@
+package br.inatel.pos.dm111.vfr;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
+
+	public static record UserResponse(String name, String email, String password, String type) {
+	}
+}
